@@ -57,7 +57,7 @@ end
 
 def power_on
   if @power == false
-     @power = =true
+     @power == true
       puts "POWER ON"
    end
 end
@@ -78,7 +78,7 @@ end
 
 def unmuted
   if @volume = 1
-    @volume = 10
+     @volume = 10
      puts "UMMUTE"
   end
 end
@@ -113,7 +113,7 @@ end
 
 def channel_down
   if @channel > 1
-   @channel -= 1 unless @vchannel == 1
+   @channel -= 1 unless @channel == 1
    puts "Channel Down #{channel}"
  end
 end
