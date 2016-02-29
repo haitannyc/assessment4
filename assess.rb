@@ -48,7 +48,7 @@ class TV
   attr_reader :volume
 
 def initialize 
-  @power = false
+  @power == false
   @channel = 1
   @max_channel = 99
   @volume = 1
@@ -56,15 +56,15 @@ def initialize
 end
 
 def power_on
-  if @power = false
-     power = true
+  if @power == false
+     @power = =true
       puts "POWER ON"
    end
 end
 
 def power_off
-  if @power = true
-    power = false
+  if @power == true
+    @power == false
     puts "POWER OFF"
   end
 end
