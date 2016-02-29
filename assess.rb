@@ -58,25 +58,65 @@ end
 def power_on
   if @power = false
      power = true
+      puts "POWER ON"
    end
 end
 
 def power_off
   if @power = true
     power = false
+    puts "POWER OFF"
   end
 end
 
 def mute
   if @volume > 1
     @volume = 1
+     puts "MUTE"
   end
 end
 
 def unmuted
   if @volume = 1
     @volume = 10
+     puts "UMMUTE"
   end
 end
 
 def volume_up
+  if @volume >= 1
+     @volume += 1 unless @volume == 99
+     puts "Volume Up #{volume}"
+   end
+end
+
+def volume_down
+  if @volume > 1
+   @volume -= 1 unless @volume == 1
+   puts "Volume Down #{volume}"
+ end
+end
+
+def channel = (channel)
+  unless channel > max_channel && channel <= 1
+    @channel = channel
+    puts "Channel #{channel}"
+  end 
+end
+
+def channel_up
+  if @channel >= 1
+     @channel += 1 unless @channel == 99
+     puts "Channel Up #{channel}"
+   end
+end
+
+def channel_down
+  if @channel > 1
+   @channel -= 1 unless @vchannel == 1
+   puts "Channel Down #{channel}"
+ end
+end
+
+
+end
